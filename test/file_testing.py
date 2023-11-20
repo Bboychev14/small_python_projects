@@ -1,0 +1,11 @@
+import os
+test = open("text.txt", "r+")
+str = test.read(4)
+print(str)
+position = test.tell()
+print(f"curr position: {position}")
+position = test.seek(0, 1)
+str = test.read(17)
+print(str)
+test.close()
+print(os.getcwd())
